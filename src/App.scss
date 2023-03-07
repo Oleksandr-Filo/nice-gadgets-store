@@ -1,9 +1,10 @@
+@import './base_styles/index.scss';
+
 .App {
   text-align: center;
 
-  &__text {
-    font-weight: bold;
-    font-size: 24px;
+  &__store {
+    @extend %H1Text;
   }
 }
 
