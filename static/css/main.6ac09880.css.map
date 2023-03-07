@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.6ac09880.css","mappings":"AAAA,KACE,SCDF,KACE,kBAEA,WAEE,eADA,eACA","sources":["index.scss","App.scss"],"sourcesContent":["body {\n  margin: 0;\n}\n",".App {\n  text-align: center;\n\n  &__text {\n    font-weight: bold;\n    font-size: 24px;\n  }\n}\n\n"],"names":[],"sourceRoot":""}
