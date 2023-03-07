@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.scss';
+import { Outlet } from 'react-router-dom';
+import { Header } from './components/Header';
+
 
 export const App: React.FC = () => {
   return (
     <div className="App">
-      <h1 className="App__store">
-        My future gadgets store
-      </h1>
+      <Header />
+
+      <Outlet />
     </div>
   );
 };

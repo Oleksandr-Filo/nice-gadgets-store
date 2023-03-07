@@ -1,0 +1,5 @@
+@import '../../base_styles/utils/extends';
+
+.homePage {
+  @extend %H1Text;
+}

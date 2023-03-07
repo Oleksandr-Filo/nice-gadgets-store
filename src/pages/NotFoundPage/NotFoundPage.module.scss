@@ -1,0 +1,5 @@
+@import '../../base_styles/utils/extends';
+
+.notFoundPage {
+  @extend %H1Text;
+}
