@@ -1,4 +1,5 @@
 @import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
 
 .header {
   display: flex;
@@ -8,9 +9,26 @@
   box-shadow: 0 1px 0 $elementsColor;
 
   &__logo {
-    margin-left: 24px;
-    margin-right: 48px;
+    margin-left: 16px;
+    margin-right: 32px;
 
-    width: 80px;
+    width: 64px;
+
+    @include onTablet {
+      margin-left: 24px;
+      margin-right: 48px;
+  
+      width: 80px;
+    }
+  }
+
+  &__menu {
+    width: 48px;
+
+    box-shadow: -1px 0px 0px $elementsColor;
+
+    @include onTablet {
+      display: none;
+    }
   }
 }

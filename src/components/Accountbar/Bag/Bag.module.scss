@@ -1,0 +1,38 @@
+@import '../../../base_styles/utils/variables';
+@import '../../../base_styles/utils/mixins';
+
+.bag {
+  display: flex;
+  padding: 16px;
+
+  @include onDesktop {
+    padding: 24px;
+  }
+
+  &.active {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      content: "";
+      display: block;
+      height: 3px;
+
+      background-color: $primaryColor;
+    }
+  }
+
+  &__image {
+    width: 16px;
+
+    transition: transform $transitionSettings;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

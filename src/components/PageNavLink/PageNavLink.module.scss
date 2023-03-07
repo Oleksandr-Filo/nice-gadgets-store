@@ -1,19 +1,29 @@
 @import '../../base_styles/utils/extends';
 @import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
 
 .nav__link {
   display: block;
-  padding: 26.5px 0;
 
   @extend %UppercaseText;
 
   text-decoration: none;
   color: $secondaryColor;
 
-  transition: $transitionSettings;
+  transition: color $transitionSettings;
 
   &:hover {
     color: $primaryColor;
+  }
+
+  @include onTablet {
+    display: block;
+    padding: 18.5px 0;
+  }
+
+  @include onDesktop {
+    display: block;
+    padding: 26.5px 0;
   }
 
   &.active {

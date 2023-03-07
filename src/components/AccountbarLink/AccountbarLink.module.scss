@@ -1,9 +1,9 @@
 @import '../../base_styles/utils/extends';
 @import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
 
 .accbar__link {
   display: block;
-  padding: 26.5px 16px;
 
   @extend %UppercaseText;
 
@@ -14,6 +14,16 @@
 
   &:hover {
     color: $primaryColor;
+  }
+
+  @include onTablet {
+    display: block;
+    padding: 18.5px 8px;
+  }
+
+  @include onDesktop {
+    display: block;
+    padding: 26.5px 16px;
   }
 
   &.active {

@@ -1,9 +1,18 @@
 @import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
 
 .accbar {
-  display: flex;
+  display: none;
+
+  @include onTablet {
+    display: flex;
+  }
 
   &__item {
+    box-shadow: -1px 0px 0px $elementsColor;
+  }
+
+  &__bag {
     box-shadow: -1px 0px 0px $elementsColor;
   }
 }
