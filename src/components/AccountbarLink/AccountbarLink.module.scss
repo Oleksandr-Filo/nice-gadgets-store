@@ -1,0 +1,37 @@
+@import '../../base_styles/utils/extends';
+@import '../../base_styles/utils/variables';
+
+.accbar__link {
+  display: block;
+  padding: 26.5px 16px;
+
+  @extend %UppercaseText;
+
+  text-decoration: none;
+  color: $secondaryColor;
+
+  transition: $transitionSettings;
+
+  &:hover {
+    color: $primaryColor;
+  }
+
+  &.active {
+    position: relative;
+
+    color: $primaryColor;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      content: "";
+      display: block;
+      height: 3px;
+
+      background-color: $primaryColor;
+    }
+  }
+}

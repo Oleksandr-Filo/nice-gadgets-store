@@ -1,20 +1,20 @@
 import React from 'react';
 import cn from 'classnames';
 import { NavLink } from 'react-router-dom';
-import s from './PageNavLink.module.scss';
+import s from './AccountbarLink.module.scss';
 
 interface Props {
   to: string;
-  navTitle: string;
+  title: string;
 };
 
-export const PageNavLink: React.FC<Props> = React.memo(
-  ({ to, navTitle }) => (
+export const AccountbarLink: React.FC<Props> = React.memo(
+  ({ to, title }) => (
     <NavLink to={to} className={({ isActive }) => cn(
-      `${s.nav__link}`,
+      `${s.accbar__link}`,
       { [s.active]: isActive },
     )} >
-      {navTitle}
+      {title}
     </NavLink>
   ),
 );

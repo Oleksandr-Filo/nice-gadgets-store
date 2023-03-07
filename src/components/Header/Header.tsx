@@ -1,4 +1,5 @@
 import React from 'react';
+import { Accountbar } from '../Accountbar';
 import { Logo } from '../Logo';
 import { Navbar } from '../Navbar';
 import s from './Header.module.scss';
@@ -12,19 +13,7 @@ export const Header: React.FC = React.memo(() => {
 
       <Navbar />
 
-      <ul>
-        <li>
-          <a href="">Account</a>
-        </li>
-
-        <li>
-          <a href="">Sign in</a>
-        </li>
-
-        <li>
-          <a href="">Sign up</a>
-        </li>
-      </ul>
+      <Accountbar />
     </header>
   );
 });

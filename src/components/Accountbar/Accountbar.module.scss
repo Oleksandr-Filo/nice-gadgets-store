@@ -1,0 +1,9 @@
+@import '../../base_styles/utils/variables';
+
+.accbar {
+  display: flex;
+
+  &__item {
+    box-shadow: -1px 0px 0px $elementsColor;
+  }
+}
