@@ -1,9 +1,5 @@
 @import './base_styles/index.scss';
 
 .App {
-  &__store {
-    @extend %H1Text;
-    text-align: center;
-  }
 }
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import { PageNavLink } from '../PageNavLink';
+import s from './Navbar.module.scss';
 
 export const Navbar: React.FC = React.memo(() => (
-  <nav>
-    <ul>
-      <li>
+  <nav className={s.nav}>
+    <ul className={s.nav__list}>
+      <li className={s.nav__item}>
         <PageNavLink to="/" navTitle="Home" />
       </li>
 
