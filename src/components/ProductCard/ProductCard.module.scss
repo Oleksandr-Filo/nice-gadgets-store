@@ -1,0 +1,120 @@
+@import '../../base_styles/utils/extends';
+@import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
+
+.card {
+  padding: 32px;
+
+  border: 1px solid $secondaryColor;
+
+  &:hover {
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 24px;
+    height: 130px;
+
+    @include onTablet {
+      height: 196px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    @extend %BodyTextTitle;
+
+    color: $primaryColor;
+  }
+  
+  &__price {
+    margin-bottom: 8px;
+
+    @extend %H3Text;
+
+    color: $primaryColor;
+  }
+  
+  &__separator {
+    margin-bottom: 16px;
+
+    height: 1px;
+    width: 100%;
+
+    background-color: $elementsColor;
+  }
+
+  &__screen_params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @extend %BodyText;
+  }
+
+  &__screen_title {
+    color: $secondaryColor;
+  }
+
+  &__screen_size {
+    color: $primaryColor;
+  }
+
+  &__capacity_params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @extend %BodyText;
+  }
+  
+  &__capacity_title {
+    color: $secondaryColor;
+  }
+
+  &__capacity_size {
+    color: $primaryColor;
+  }
+
+  &__ram_params {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    @extend %BodyText;
+  }
+    
+  &__ram_title {
+    color: $secondaryColor;
+  }
+
+  &__ram_size {
+    color: $primaryColor;
+  }
+
+  &__buy_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 0;
+
+    border: none;
+    background-color: $primaryColor;
+
+    @extend %ButtonsText;
+
+    color: $whiteColor;
+
+    cursor: pointer;
+
+    transition: box-shadow $transitionSettings;
+
+    &:hover {
+      box-shadow: 0px 3px 13px rgba(23, 32, 49, 0.4);
+    }
+  }
+}
