@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nice-gadgets-store/static/css/main.888bf43b.css",
-    "main.js": "/nice-gadgets-store/static/js/main.6ee13aed.js",
+    "main.css": "/nice-gadgets-store/static/css/main.4908cf81.css",
+    "main.js": "/nice-gadgets-store/static/js/main.e95f5827.js",
     "static/media/Logo.svg": "/nice-gadgets-store/static/media/Logo.3c6bd1886792ca6da9d59ce7bea7dc78.svg",
     "static/media/Mont-Regular.otf": "/nice-gadgets-store/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
     "static/media/Mont-Bold.otf": "/nice-gadgets-store/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
     "static/media/Bag.svg": "/nice-gadgets-store/static/media/Bag.f9632dca8fdaed9bb696b99ac28006ba.svg",
     "index.html": "/nice-gadgets-store/index.html",
     "static/media/Menu.svg": "/nice-gadgets-store/static/media/Menu.744ac0b04d84e4feeeb5288d215af5b2.svg",
-    "main.888bf43b.css.map": "/nice-gadgets-store/static/css/main.888bf43b.css.map",
-    "main.6ee13aed.js.map": "/nice-gadgets-store/static/js/main.6ee13aed.js.map"
+    "main.4908cf81.css.map": "/nice-gadgets-store/static/css/main.4908cf81.css.map",
+    "main.e95f5827.js.map": "/nice-gadgets-store/static/js/main.e95f5827.js.map"
   },
   "entrypoints": [
-    "static/css/main.888bf43b.css",
-    "static/js/main.6ee13aed.js"
+    "static/css/main.4908cf81.css",
+    "static/js/main.e95f5827.js"
   ]
 }
