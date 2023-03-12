@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { Phone } from '../../types/Phone';
 import s from './ProductCard.module.scss';
 
@@ -7,6 +8,10 @@ interface Props {
 }
 
 export const ProductCard: React.FC<Props> = React.memo(({ phone }) => {
+  const [phonesInBag, setPhonesInBag] = useLocalStorage('phones', []);
+  
+  const isPhoneInBag = phonesInBag.some(item => item.id === phone.id);
+
   const BASE_URL = 'https://raw.githubusercontent.com/Oleksandr-Filo/nice-gadgets-store/master/src/';
 
   return (
@@ -44,8 +49,11 @@ export const ProductCard: React.FC<Props> = React.memo(({ phone }) => {
       <button
         type="button"
         className={s.card__buy_btn}
+        onClick={() => setPhonesInBag(phone)}
       >
-        Buy
+        {isPhoneInBag
+          ? 'Added'
+          : 'Add to cart'}
       </button>
     </article>
   );

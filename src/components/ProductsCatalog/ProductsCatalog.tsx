@@ -11,9 +11,8 @@ export const ProductsCatalog: React.FC = React.memo(() => {
   return (
     <section className={s.catalog}>
       {phones.map(phone => (
-        <div className={s.catalog__item}>
+        <div className={s.catalog__item} key={phone.id}>
           <ProductCard
-            key={phone.id}
             phone={phone}
           />
         </div>

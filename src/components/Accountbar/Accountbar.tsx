@@ -10,15 +10,15 @@ export const Accountbar: React.FC = React.memo(() => (
     </li>
 
     <li className={s.accbar__item}>
-      <AccountbarLink to="./account" title="Account" />
+      <AccountbarLink to="/account" title="Account" />
     </li>
 
     <li className={s.accbar__item}>
-      <AccountbarLink to="./login" title="Sign in" />
+      <AccountbarLink to="/login" title="Sign in" />
     </li>
 
     <li className={s.accbar__item}>
-      <AccountbarLink to="./register" title="Sign up" />
+      <AccountbarLink to="/register" title="Sign up" />
     </li>
   </ul>
 ));
