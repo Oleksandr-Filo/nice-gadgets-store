@@ -2,7 +2,7 @@
 @import '../../base_styles/utils/variables';
 @import '../../base_styles/utils/mixins';
 
-.notFoundPage {
+.registerPage {
   padding: 24px 0;
   
   @include onTablet {
@@ -10,14 +10,16 @@
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 
     @extend %H1Text;
 
     color: $primaryColor;
-  
-    @include onTablet {
-      margin-bottom: 40px;
-    }
+  }
+
+  &__text {
+    @extend %H3Text;
+
+    color: $primaryColor;
   }
 }

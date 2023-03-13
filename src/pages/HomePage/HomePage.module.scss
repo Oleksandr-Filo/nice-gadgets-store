@@ -1,5 +1,23 @@
 @import '../../base_styles/utils/extends';
+@import '../../base_styles/utils/variables';
+@import '../../base_styles/utils/mixins';
 
 .homePage {
-  @extend %H1Text;
+  padding: 24px 0;
+  
+  @include onTablet {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @extend %H1Text;
+
+    color: $primaryColor;
+  
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+  }
 }
